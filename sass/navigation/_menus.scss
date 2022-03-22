@@ -1,0 +1,182 @@
+.main-navigation {
+	// clear: both;
+	display: block;
+	// float: left;
+	// width: 100%;
+	float: right;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		float: left;
+		font-size: 11px;
+		font-weight: 700;
+		line-height: 40px;
+		padding-left: 10px;
+		padding-right: 0;
+		position: relative;
+		text-transform: uppercase;
+
+		&:hover > a,
+		&.focus > a {
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+
+	a {
+		color: #fff;
+		display: block;
+		text-decoration: none;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: #999;
+			text-decoration: underline;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle {
+	background: transparent;
+	border: none;
+	border-left: 1px solid #fff;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 10px;
+	font-weight: 700;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	position: absolute;
+	right: 0;
+	text-transform: uppercase;
+	top: 0;
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.main-navigation.toggled ul {
+	background: #1a1a1a;
+	left: 0;
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	z-index: 100;
+
+	li {
+		font-size: 12px;
+		float: none;
+		padding: 0;
+		text-transform: uppercase;
+
+		&.current-menu-item a {
+			color: #999;
+		}
+	}
+
+	a {
+		color: #fff;
+		line-height: 1.5;
+		padding: 10px;
+		
+		&:link,
+		&:visited {
+			color: #fff;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: #999;
+			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

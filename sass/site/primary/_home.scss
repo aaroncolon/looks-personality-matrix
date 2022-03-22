@@ -1,0 +1,127 @@
+.site-main {
+  padding-top: 40px
+}
+
+.login-form-wrap {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 0 10px;
+  width: 100%;
+
+  label {
+    display: block;
+    @include font-size(0.875);
+  }
+
+  input {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .login-remember {
+    label {
+      display: inline;
+    }
+
+    input {
+      display: inline-block;
+      height: 15px;
+      padding: 0;
+      width: 15px;
+    }
+  }
+
+  input[type="submit"] {
+    background: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 15px;
+
+    &:hover,
+    &:focus {
+      background: #444;
+    }
+  }
+
+  .create-account-wrap {
+    text-align: center;
+  }
+}
+
+
+.section-notifications {
+  display: inline-block;
+  height: 40px;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  transform: translateX(-50%);
+  top: 0;
+  width: auto;
+  vertical-align: middle;
+  z-index: 15;
+
+  .notification-wrap {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    overflow-y: visible;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  .notification {
+    background-color: #dff0d8;
+    color: #000;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0;
+    opacity: 0;
+    padding: 0 14px;
+    transition: opacity 1s ease;
+    text-transform: capitalize;
+
+    &.notification--visible {
+      opacity: 1;
+    }
+
+    &.notification--removing {
+      opacity: 0;
+    }
+
+    & + .notification {
+      margin-top: 5px;
+    }
+  }
+}
+
+.section-add-post {
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+}
+
+.form-group {
+  input[type="date"],
+  input[type="text"],
+  input[type="submit"],
+  textarea {
+    display: block;
+    padding: 15px;
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  & + .form-group {
+    margin-top: 20px;
+  }
+
+  .help-block {
+    margin-top: 0;
+  }
+}

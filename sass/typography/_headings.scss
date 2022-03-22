@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+.site-title {
+  font-family: $font__site-title;
+  font-size: 14px;
+	font-weight: 700;
+  line-height: 40px;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+  &.site-title--hero {
+    @include font-size(3.333333333333333);
+		line-height: 1;
+		margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.site-title__link {
+  color: #fff;
+  text-decoration: none;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+}
+
+.site-description--hero {
+  font-family: $font__site-title;
+  @include font-size(1.875);
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.heading--section {
+  font-family: $font__site-title;
+  @include font-size(2.2);
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}

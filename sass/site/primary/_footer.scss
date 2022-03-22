@@ -1,0 +1,25 @@
+.site-footer {
+  padding: 20px 10px;
+}
+
+.site-info {
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.site-info__credit-link,
+.site-info__author-link {
+  font-weight: 700;
+  
+  &:link,
+  &:visited {
+    color: #000;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #999;
+  }
+}

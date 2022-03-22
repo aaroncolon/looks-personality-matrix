@@ -1,0 +1,12 @@
+export const ADD_POST = "ADD_POST";
+
+export const ADD_POST_REQUEST = "ADD_POST_REQUEST";
+export const ADD_POST_RECEIVE = "ADD_POST_RECEIVE";
+export const ADD_POST_FAILURE = "ADD_POST_FAILURE";
+
+export const GET_POST = "GET_POST";
+export const GET_POST_REQUEST = "GET_POST_REQUEST";
+export const GET_POST_RECEIVE = "GET_POST_RECEIVE";
+export const GET_POST_FAILURE = "GET_POST_FAILURE";
+
+export const REMOVE_NOTIFICATION = "REMOVE_NOTIFICATION";

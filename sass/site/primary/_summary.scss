@@ -1,0 +1,51 @@
+.section-person-summary {
+  padding: 0 10px 10px 10px;
+}
+
+.person-form-wrap,
+.person-summary {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.person-summary__name {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.person-summary__list {
+  float: left;
+  text-align: center;
+  width: 33.333333333333333%;
+
+  dd {
+    margin-bottom: 0;
+  }
+}
+
+.person-chart-pie--google {
+  height: 500px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.person-chart-line--google {
+  height: 500px;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.person-chart-scatter--google {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.person-table-wrap {
+  th {
+    text-align: left;
+  }
+}
