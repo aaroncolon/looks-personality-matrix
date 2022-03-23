@@ -23,7 +23,7 @@ class App extends React.Component {
     )
 
     const summary = (
-      <div className="col col-xs-12 col-sm-6 col-sm-offset-3">
+      <div className="col col-xs-12">
         <div id="react-root-person-summary">
           <h1 className="heading heading--section">Summary</h1>
           {<FormPersonSummary />}

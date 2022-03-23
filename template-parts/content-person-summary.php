@@ -81,12 +81,12 @@ $user_people_names = (!empty($user_people)) ? array_column($user_people, 'name')
   </div>
 
   <div class="section-chart">
-    <h2 class="section-title">Zone Distribution</h2>
+    <h2 class="section-title section-title--center">Zone Distribution</h2>
     <div id="person-chart-pie--google" class="person-chart-pie--google"></div>
   </div>
 
   <div class="section-chart">
-    <h2 class="section-title">Looks / Personality Over Time</h2>
+    <h2 class="section-title section-title--center">Looks / Personality Over Time</h2>
     <div id="person-chart-line--google" class="person-chart-line--google"></div>
   </div>
 
@@ -107,7 +107,7 @@ $user_people_names = (!empty($user_people)) ? array_column($user_people, 'name')
   -->
 
   <div class="person-table-wrap">
-    <h2 class="section-title">Person Details</h2>
+    <h2 class="section-title section-title--center">Person Details</h2>
     <?php
     if (!empty($user_people)):
     ?>

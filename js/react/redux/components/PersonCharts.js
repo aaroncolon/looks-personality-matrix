@@ -25,11 +25,11 @@ class PersonCharts extends React.Component {
     return (
       <>
         <div className="section-chart">
-          <h2 className="section-title">Zone Distribution</h2>
+          <h2 className="section-title section-title--center">Zone Distribution</h2>
           <ChartPieG chartData={data.pieG} />
         </div>
         <div className="section-chart">
-          <h2 className="section-title">Looks / Personality Over Time</h2>
+          <h2 className="section-title section-title--center">Looks / Personality Over Time</h2>
           <ChartLineG chartData={data.lineG} />
         </div>
       </>

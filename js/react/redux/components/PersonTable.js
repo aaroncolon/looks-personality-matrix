@@ -55,7 +55,7 @@ class PersonTable extends React.Component {
 
     return (
       <div className="person-table-wrap">
-        <h2 className="section-title">Person Details</h2>
+        <h2 className="section-title section-title--center">Person Details</h2>
         <table id="person-table">
           <thead>
             {headings}

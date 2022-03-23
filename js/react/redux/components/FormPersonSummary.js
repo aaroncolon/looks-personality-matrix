@@ -39,27 +39,29 @@ class FormPersonSummary extends React.Component {
     const months = this.doTimeframeOptions();
 
     return (
-      <form id="form-summary" onSubmit={this.handleSubmit} method="POST">
-        <div className="form-group">
-          <label htmlFor="person-options">Select Person</label>
-          <select className="form-control" id="person-options" name="person-options" required>
-            <option value="">Select Person...</option>
-            {names}
-          </select>
-        </div>
+      <div className="person-form-wrap">
+        <form id="form-summary" className="form-summary" onSubmit={this.handleSubmit} method="POST">
+          <div className="form-group">
+            <label htmlFor="person-options">Select Person</label>
+            <select className="form-control" id="person-options" name="person-options" required>
+              <option value="">Select Person...</option>
+              {names}
+            </select>
+          </div>
 
-        <div className="form-group">
-          <label htmlFor="timeframe">Timeframe</label>
-          <select className="form-control" id="timeframe" name="timeframe" defaultValue="12" required>
-            {months}
-          </select>
-        </div>
+          <div className="form-group">
+            <label htmlFor="timeframe">Timeframe</label>
+            <select className="form-control" id="timeframe" name="timeframe" defaultValue="12" required>
+              {months}
+            </select>
+          </div>
 
-        <div className="form-group">
-          <input id="nonce-get-person" type="hidden" value={_s_page_data.nonce_get_people} />
-          <input id="submit-get-person" type="submit" value="Search" />
-        </div>
-      </form>
+          <div className="form-group">
+            <input id="nonce-get-person" type="hidden" value={_s_page_data.nonce_get_people} />
+            <input id="submit-get-person" type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
     );
   }
 

@@ -7,15 +7,15 @@ const personTable = {
   personName: null,
 
   average: {
-    looks   : null,
+    looks : null,
     personality : null,
-    zone  : null
+    zone : null
   },
 
   classNames: {
-    looks   : 'looks--',
+    looks : 'looks--',
     personality : 'personality--',
-    zone  : 'zone--'
+    zone : 'zone--'
   },
 
   init: function() {
